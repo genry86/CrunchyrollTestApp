@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB8A3B8C193B5648006FF41B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8A3B8B193B5648006FF41B /* Foundation.framework */; };
+		BB8A3B8E193B5648006FF41B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8A3B8D193B5648006FF41B /* CoreGraphics.framework */; };
+		BB8A3B90193B5648006FF41B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8A3B8F193B5648006FF41B /* UIKit.framework */; };
+		BB8A3BCB193B5981006FF41B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8A3BC8193B5981006FF41B /* Images.xcassets */; };
+		BB8A3BCC193B5981006FF41B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A3BC9193B5981006FF41B /* main.m */; };
+		BB8A3BCF193B5A05006FF41B /* CCHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A3BCE193B5A05006FF41B /* CCHAppDelegate.m */; };
+		BB8A3BD3193B5CBA006FF41B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8A3BD0193B5CBA006FF41B /* Default-568h@2x.png */; };
+		BB8A3BD4193B5CBA006FF41B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8A3BD1193B5CBA006FF41B /* Default@2x.png */; };
+		BB8A3BD5193B5CBA006FF41B /* nav_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8A3BD2193B5CBA006FF41B /* nav_bg@2x.png */; };
+		BB8A3BDD193B5D04006FF41B /* FTWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A3BD8193B5D04006FF41B /* FTWCache.m */; };
+		BB8A3BDE193B5D04006FF41B /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BB8A3BDA193B5D04006FF41B /* ProgressHUD.bundle */; };
+		BB8A3BDF193B5D04006FF41B /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A3BDC193B5D04006FF41B /* ProgressHUD.m */; };
+		BBE5314D193B63D300159DEB /* CCHGalleryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE5314C193B63D300159DEB /* CCHGalleryItem.m */; };
+		BBE53159193B899900159DEB /* CCHMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE53158193B899900159DEB /* CCHMenuViewController.m */; };
+		BBE5315D193B8B0900159DEB /* CCHImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE5315B193B8B0900159DEB /* CCHImageViewController.m */; };
+		BBE5315E193B8B0900159DEB /* CCHImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE5315C193B8B0900159DEB /* CCHImageViewController.xib */; };
+		BBE53162193BA4A700159DEB /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE5315F193BA4A700159DEB /* Icon-40.png */; };
+		BBE53163193BA4A700159DEB /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE53160193BA4A700159DEB /* Icon-40@2x.png */; };
+		BBE53164193BA4A700159DEB /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE53161193BA4A700159DEB /* Icon-60@2x.png */; };
+		BBE53167193BA81700159DEB /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE53165193BA81700159DEB /* Icon-Small.png */; };
+		BBE53168193BA81700159DEB /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE53166193BA81700159DEB /* Icon-Small@2x.png */; };
+		BBE5316B193BCDE800159DEB /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE5316A193BCDE800159DEB /* GlobalConstants.m */; };
+		BBE53183193BCE5900159DEB /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE53182193BCE5900159DEB /* GlobalFunctions.m */; };
+		BBE5318A193BCE8600159DEB /* NSData+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE53185193BCE8600159DEB /* NSData+Utility.m */; };
+		BBE5318B193BCE8600159DEB /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE53187193BCE8600159DEB /* NSString+Utility.m */; };
+		BBE5318C193BCE8600159DEB /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE53189193BCE8600159DEB /* UIImage+Utility.m */; };
+		BBE5318F193BCE9100159DEB /* DownloadDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE5318E193BCE9100159DEB /* DownloadDataHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB8A3B88193B5648006FF41B /* Crunchyroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crunchyroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8A3B8B193B5648006FF41B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB8A3B8D193B5648006FF41B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BB8A3B8F193B5648006FF41B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BB8A3BC6193B5981006FF41B /* Crunchyroll-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Crunchyroll-Info.plist"; sourceTree = "<group>"; };
+		BB8A3BC7193B5981006FF41B /* Crunchyroll-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Crunchyroll-Prefix.pch"; sourceTree = "<group>"; };
+		BB8A3BC8193B5981006FF41B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB8A3BC9193B5981006FF41B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB8A3BCD193B5A05006FF41B /* CCHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHAppDelegate.h; sourceTree = "<group>"; };
+		BB8A3BCE193B5A05006FF41B /* CCHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHAppDelegate.m; sourceTree = "<group>"; };
+		BB8A3BD0193B5CBA006FF41B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BB8A3BD1193B5CBA006FF41B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BB8A3BD2193B5CBA006FF41B /* nav_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bg@2x.png"; sourceTree = "<group>"; };
+		BB8A3BD7193B5D04006FF41B /* FTWCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWCache.h; sourceTree = "<group>"; };
+		BB8A3BD8193B5D04006FF41B /* FTWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWCache.m; sourceTree = "<group>"; };
+		BB8A3BDA193B5D04006FF41B /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		BB8A3BDB193B5D04006FF41B /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		BB8A3BDC193B5D04006FF41B /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		BBE5314B193B63D300159DEB /* CCHGalleryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHGalleryItem.h; sourceTree = "<group>"; };
+		BBE5314C193B63D300159DEB /* CCHGalleryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHGalleryItem.m; sourceTree = "<group>"; };
+		BBE53157193B899900159DEB /* CCHMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHMenuViewController.h; sourceTree = "<group>"; };
+		BBE53158193B899900159DEB /* CCHMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHMenuViewController.m; sourceTree = "<group>"; };
+		BBE5315A193B8B0900159DEB /* CCHImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHImageViewController.h; sourceTree = "<group>"; };
+		BBE5315B193B8B0900159DEB /* CCHImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHImageViewController.m; sourceTree = "<group>"; };
+		BBE5315C193B8B0900159DEB /* CCHImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHImageViewController.xib; sourceTree = "<group>"; };
+		BBE5315F193BA4A700159DEB /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		BBE53160193BA4A700159DEB /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		BBE53161193BA4A700159DEB /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		BBE53165193BA81700159DEB /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		BBE53166193BA81700159DEB /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		BBE53169193BCDE800159DEB /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
+		BBE5316A193BCDE800159DEB /* GlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConstants.m; sourceTree = "<group>"; };
+		BBE53181193BCE5900159DEB /* GlobalFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunctions.h; sourceTree = "<group>"; };
+		BBE53182193BCE5900159DEB /* GlobalFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunctions.m; sourceTree = "<group>"; };
+		BBE53184193BCE8600159DEB /* NSData+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utility.h"; sourceTree = "<group>"; };
+		BBE53185193BCE8600159DEB /* NSData+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utility.m"; sourceTree = "<group>"; };
+		BBE53186193BCE8600159DEB /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		BBE53187193BCE8600159DEB /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		BBE53188193BCE8600159DEB /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		BBE53189193BCE8600159DEB /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		BBE5318D193BCE9100159DEB /* DownloadDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadDataHelper.h; sourceTree = "<group>"; };
+		BBE5318E193BCE9100159DEB /* DownloadDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadDataHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB8A3B85193B5648006FF41B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8A3B8E193B5648006FF41B /* CoreGraphics.framework in Frameworks */,
+				BB8A3B90193B5648006FF41B /* UIKit.framework in Frameworks */,
+				BB8A3B8C193B5648006FF41B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB8A3B7F193B5648006FF41B = {
+			isa = PBXGroup;
+			children = (
+				BB8A3B91193B5648006FF41B /* Crunchyroll */,
+				BB8A3B8A193B5648006FF41B /* Frameworks */,
+				BB8A3B89193B5648006FF41B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8A3B89193B5648006FF41B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB8A3B88193B5648006FF41B /* Crunchyroll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB8A3B8A193B5648006FF41B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB8A3B8B193B5648006FF41B /* Foundation.framework */,
+				BB8A3B8D193B5648006FF41B /* CoreGraphics.framework */,
+				BB8A3B8F193B5648006FF41B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB8A3B91193B5648006FF41B /* Crunchyroll */ = {
+			isa = PBXGroup;
+			children = (
+				BB8A3BC0193B5902006FF41B /* Application */,
+				BB8A3BC1193B5902006FF41B /* Controllers */,
+				BB8A3BC2193B5902006FF41B /* Library */,
+				BB8A3BC3193B5902006FF41B /* Models */,
+				BB8A3BC4193B5902006FF41B /* Resources */,
+				BB8A3BC5193B5902006FF41B /* Vendors */,
+			);
+			path = Crunchyroll;
+			sourceTree = "<group>";
+		};
+		BB8A3BC0193B5902006FF41B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BBE53169193BCDE800159DEB /* GlobalConstants.h */,
+				BBE5316A193BCDE800159DEB /* GlobalConstants.m */,
+				BB8A3BCD193B5A05006FF41B /* CCHAppDelegate.h */,
+				BB8A3BCE193B5A05006FF41B /* CCHAppDelegate.m */,
+				BB8A3BC6193B5981006FF41B /* Crunchyroll-Info.plist */,
+				BB8A3BC7193B5981006FF41B /* Crunchyroll-Prefix.pch */,
+				BB8A3BC8193B5981006FF41B /* Images.xcassets */,
+				BB8A3BC9193B5981006FF41B /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BB8A3BC1193B5902006FF41B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBE53157193B899900159DEB /* CCHMenuViewController.h */,
+				BBE53158193B899900159DEB /* CCHMenuViewController.m */,
+				BBE5315A193B8B0900159DEB /* CCHImageViewController.h */,
+				BBE5315B193B8B0900159DEB /* CCHImageViewController.m */,
+				BBE5315C193B8B0900159DEB /* CCHImageViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB8A3BC2193B5902006FF41B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BBE5316C193BCDF700159DEB /* Categories */,
+				BBE5316D193BCDF700159DEB /* GlobalFunctions */,
+				BBE5316E193BCDF700159DEB /* Helpers */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BB8A3BC3193B5902006FF41B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBE5314B193B63D300159DEB /* CCHGalleryItem.h */,
+				BBE5314C193B63D300159DEB /* CCHGalleryItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB8A3BC4193B5902006FF41B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBE53165193BA81700159DEB /* Icon-Small.png */,
+				BBE53166193BA81700159DEB /* Icon-Small@2x.png */,
+				BBE5315F193BA4A700159DEB /* Icon-40.png */,
+				BBE53160193BA4A700159DEB /* Icon-40@2x.png */,
+				BBE53161193BA4A700159DEB /* Icon-60@2x.png */,
+				BB8A3BD0193B5CBA006FF41B /* Default-568h@2x.png */,
+				BB8A3BD1193B5CBA006FF41B /* Default@2x.png */,
+				BB8A3BD2193B5CBA006FF41B /* nav_bg@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB8A3BC5193B5902006FF41B /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				BB8A3BD6193B5D04006FF41B /* FTWCache */,
+				BB8A3BD9193B5D04006FF41B /* ProgressHUD */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		BB8A3BD6193B5D04006FF41B /* FTWCache */ = {
+			isa = PBXGroup;
+			children = (
+				BB8A3BD7193B5D04006FF41B /* FTWCache.h */,
+				BB8A3BD8193B5D04006FF41B /* FTWCache.m */,
+			);
+			path = FTWCache;
+			sourceTree = "<group>";
+		};
+		BB8A3BD9193B5D04006FF41B /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BB8A3BDA193B5D04006FF41B /* ProgressHUD.bundle */,
+				BB8A3BDB193B5D04006FF41B /* ProgressHUD.h */,
+				BB8A3BDC193B5D04006FF41B /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		BBE5316C193BCDF700159DEB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BBE53184193BCE8600159DEB /* NSData+Utility.h */,
+				BBE53185193BCE8600159DEB /* NSData+Utility.m */,
+				BBE53186193BCE8600159DEB /* NSString+Utility.h */,
+				BBE53187193BCE8600159DEB /* NSString+Utility.m */,
+				BBE53188193BCE8600159DEB /* UIImage+Utility.h */,
+				BBE53189193BCE8600159DEB /* UIImage+Utility.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BBE5316D193BCDF700159DEB /* GlobalFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				BBE53181193BCE5900159DEB /* GlobalFunctions.h */,
+				BBE53182193BCE5900159DEB /* GlobalFunctions.m */,
+			);
+			path = GlobalFunctions;
+			sourceTree = "<group>";
+		};
+		BBE5316E193BCDF700159DEB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BBE5318D193BCE9100159DEB /* DownloadDataHelper.h */,
+				BBE5318E193BCE9100159DEB /* DownloadDataHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8A3B87193B5648006FF41B /* Crunchyroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8A3BBA193B5648006FF41B /* Build configuration list for PBXNativeTarget "Crunchyroll" */;
+			buildPhases = (
+				BB8A3B84193B5648006FF41B /* Sources */,
+				BB8A3B85193B5648006FF41B /* Frameworks */,
+				BB8A3B86193B5648006FF41B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crunchyroll;
+			productName = Crunchyroll;
+			productReference = BB8A3B88193B5648006FF41B /* Crunchyroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB8A3B80193B5648006FF41B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CCH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Genry;
+			};
+			buildConfigurationList = BB8A3B83193B5648006FF41B /* Build configuration list for PBXProject "Crunchyroll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB8A3B7F193B5648006FF41B;
+			productRefGroup = BB8A3B89193B5648006FF41B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8A3B87193B5648006FF41B /* Crunchyroll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB8A3B86193B5648006FF41B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8A3BD4193B5CBA006FF41B /* Default@2x.png in Resources */,
+				BB8A3BDE193B5D04006FF41B /* ProgressHUD.bundle in Resources */,
+				BB8A3BCB193B5981006FF41B /* Images.xcassets in Resources */,
+				BBE53162193BA4A700159DEB /* Icon-40.png in Resources */,
+				BBE5315E193B8B0900159DEB /* CCHImageViewController.xib in Resources */,
+				BBE53164193BA4A700159DEB /* Icon-60@2x.png in Resources */,
+				BBE53163193BA4A700159DEB /* Icon-40@2x.png in Resources */,
+				BB8A3BD3193B5CBA006FF41B /* Default-568h@2x.png in Resources */,
+				BBE53167193BA81700159DEB /* Icon-Small.png in Resources */,
+				BB8A3BD5193B5CBA006FF41B /* nav_bg@2x.png in Resources */,
+				BBE53168193BA81700159DEB /* Icon-Small@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB8A3B84193B5648006FF41B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE5314D193B63D300159DEB /* CCHGalleryItem.m in Sources */,
+				BB8A3BCC193B5981006FF41B /* main.m in Sources */,
+				BBE53183193BCE5900159DEB /* GlobalFunctions.m in Sources */,
+				BBE5318B193BCE8600159DEB /* NSString+Utility.m in Sources */,
+				BBE5318C193BCE8600159DEB /* UIImage+Utility.m in Sources */,
+				BBE5316B193BCDE800159DEB /* GlobalConstants.m in Sources */,
+				BBE5315D193B8B0900159DEB /* CCHImageViewController.m in Sources */,
+				BBE5318A193BCE8600159DEB /* NSData+Utility.m in Sources */,
+				BBE53159193B899900159DEB /* CCHMenuViewController.m in Sources */,
+				BB8A3BCF193B5A05006FF41B /* CCHAppDelegate.m in Sources */,
+				BB8A3BDF193B5D04006FF41B /* ProgressHUD.m in Sources */,
+				BBE5318F193BCE9100159DEB /* DownloadDataHelper.m in Sources */,
+				BB8A3BDD193B5D04006FF41B /* FTWCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BB8A3BB8193B5648006FF41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB8A3BB9193B5648006FF41B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB8A3BBB193B5648006FF41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Crunchyroll/Application/Crunchyroll-Prefix.pch";
+				INFOPLIST_FILE = "Crunchyroll/Application/Crunchyroll-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB8A3BBC193B5648006FF41B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Crunchyroll/Application/Crunchyroll-Prefix.pch";
+				INFOPLIST_FILE = "Crunchyroll/Application/Crunchyroll-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB8A3B83193B5648006FF41B /* Build configuration list for PBXProject "Crunchyroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8A3BB8193B5648006FF41B /* Debug */,
+				BB8A3BB9193B5648006FF41B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8A3BBA193B5648006FF41B /* Build configuration list for PBXNativeTarget "Crunchyroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8A3BBB193B5648006FF41B /* Debug */,
+				BB8A3BBC193B5648006FF41B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB8A3B80193B5648006FF41B /* Project object */;
+}
